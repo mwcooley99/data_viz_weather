@@ -1,0 +1,5 @@
+collections:
+  visualizations:
+    output: true
+
+permalink: /:categories/:title:output_ext

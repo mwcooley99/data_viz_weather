@@ -17,10 +17,13 @@
                 Dropdown
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Viz #1</a>
+                <!-- <a class="dropdown-item" href="#">Viz #1</a>
                 <a class="dropdown-item" href="#">Viz #2</a>
                 <a class="dropdown-item" href="#">Viz #3</a>
-                <a class="dropdown-item" href="#">Viz #4</a>
+                <a class="dropdown-item" href="#">Viz #4</a> -->
+                {% for viz in site.visualizations %}
+                <a class="dropdown-item" href="{{ viz.url }}">{{ viz.title }}</a>
+                {% endfor %}
                 </div>
         </li>
         </ul>
