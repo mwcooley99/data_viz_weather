@@ -22,7 +22,7 @@
                 <a class="dropdown-item" href="#">Viz #3</a>
                 <a class="dropdown-item" href="#">Viz #4</a> -->
                 {% for viz in site.visualizations %}
-                <a class="dropdown-item" href="{{site.baseurl}}{{ viz.url }}">{{ viz.title }}</a>
+                <a class="dropdown-item" href="{{ viz.url | prepend:site.baseurl}}">{{ viz.title }}</a>
                 {% endfor %}
                 </div>
         </li>
