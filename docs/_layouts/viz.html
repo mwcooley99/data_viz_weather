@@ -10,8 +10,9 @@ layout: default
             </div>
             <div class="card-body">
                 <img src="{{ site.baseurl | append:'/images/' | append: page.image}}" class="card-img">
-                
-                <p class="card-text">Ut commodo eiusmod pariatur velit sunt esse consequat fugiat velit culpa consequat. Culpa excepteur tempor eiusmod minim qui proident ullamco culpa officia sunt consectetur esse. Adipisicing incididunt nulla aliqua cupidatat ut aliqua quis cillum dolore pariatur ut ut nisi ex.</p>
+                {% for desc in page.description %}
+                <p class="card-text">{{desc}}</p>
+                {% endfor %}
             </div>
         </div>
     </div>
