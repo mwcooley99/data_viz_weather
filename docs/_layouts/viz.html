@@ -1,16 +1,16 @@
 ---
 layout: default
-overview: true
-permalink: /
 ---
+
 <div class="row">
     <div class="col-md-8">
         <div class="card">
             <div class="card-header">
-                <h5>Title</h5>
+                <h5>{{ page.title }}</h5>
             </div>
             <div class="card-body">
-                <img src="/images/354.jpeg" height=150px width=200px class="float-left img-fluid m-1">
+                <img src="{{ site.baseurl | append:'/images/' | append: page.image}}" class="card-img">
+                
                 <p class="card-text">Ut commodo eiusmod pariatur velit sunt esse consequat fugiat velit culpa consequat. Culpa excepteur tempor eiusmod minim qui proident ullamco culpa officia sunt consectetur esse. Adipisicing incididunt nulla aliqua cupidatat ut aliqua quis cillum dolore pariatur ut ut nisi ex.</p>
             </div>
         </div>
