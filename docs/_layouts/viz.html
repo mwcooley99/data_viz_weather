@@ -6,10 +6,10 @@ layout: default
     <div class="col-lg-8">
         <div class="card">
             <div class="card-header">
-                <h5>{{ page.title }}</h5>
+                <h5 class="text-center">City Latitude vs {{ page.title }}</h5>
             </div>
+            <img src="{{ site.baseurl | append:'/images/' | append: page.image}}" class="card-img">
             <div class="card-body">
-                <img src="{{ site.baseurl | append:'/images/' | append: page.image}}" class="card-img">
                 {% for desc in page.description %}
                 <p class="card-text">{{desc}}</p>
                 {% endfor %}
