@@ -6,8 +6,8 @@
             <div class="row no-gutters">
                 {% for viz in site.visualizations %}
                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4 mt-4">
-                    <a class="dropdown-item" href="{{ viz.url | prepend:site.baseurl}}">
-                        <img href="{{ viz.url | prepend:site.baseurl}}" src="{{site.baseurl | append:'/images/' | append: viz.image}}" class="img-thumbnail">
+                    <a class="thumbnail" href="{{ viz.url | prepend:site.baseurl}}">
+                        <img href="{{ viz.url | prepend:site.baseurl}}" src="{{site.baseurl | append:'/images/' | append: viz.image}}" class="img-fluid">
                     </a>
                 </div>
                 {% endfor %}
